@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitePage.master.cs" Inherits="ProjetoFinal.SitePage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <style id="pageCSS"></style>
+    <link rel="shortcut icon" href="assets/img/logo_512.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>My.Docs.App</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+
+    </asp:ContentPlaceHolder>
+
+
+
+
+</head>
+<body>
+        <a id="top"></a>
+
+    <div class="wrap">
+
+        <header>
+            <div class="header">
+                <a href="index.aspx" title="Página incial"><img id="logo" src="assets/img/logo_64.png" alt="My.Docs.App Logo"></a>
+                <h1 id="siteName">My.Docs.App - <asp:Label ID="ltrCookie" runat="server" ></asp:Label></h1>
+                <a href="#menu" id="menuToggle" title="Mostra menu" onclick="menuToggle(this)"><i class="fas fa-fw fa-ellipsis-v"></i></a>
+            </div>
+        </header>
+
+        <nav>
+
+            <div id="mainMenu" class="nav menu-closed">
+                <a href="index.aspx" title="Página incial">
+                    <i class="fas fa-home fa-fw"></i><span>Início</span>
+                </a>
+                <a href="manager.aspx" title="Gerenciar documentos">
+                    <i class="fas fa-file-alt fa-fw"></i><span>Gerenciar</span>
+                </a>
+                <a href="UploadDeArquivo.aspx" title="Enviar novo documento">
+                    <i class="fas fa-file-upload fa-fw"></i><span>Enviar</span>
+                </a>
+                <a href="contacts" title="Faça contato">
+                    <i class="fas fa-comments fa-fw"></i><span>Contatos</span>
+                </a>
+                <a href="about" title="Sobre o App">
+                    <i class="fas fa-info-circle fa-fw"></i><span>Sobre</span>
+                </a>
+
+                <a href="log.aspx" title="Seu perfil">
+                    <i class="fas fa-list fa-fw"></i><span>Logs</span>
+                </a>  
+
+                <a href="perfil.aspx" title="Seu perfil">
+                    <i class="fas fa-user fa-fw"></i><span>Perfil</span>
+                </a>  
+                
+                <a href="#" onclick="logout()" title="Sair">
+                    <i class="fas fa-exclamation fa-fw"></i><span>Sair</span>
+                </a> 
+                
+                        <script>
+                            function logout() {
+                                let text = "Deseja Sair?\n Sim ou Não.";
+                                if (confirm(text) == true) {
+                                    window.location.href = "logout.aspx";
+                                }
+                            }
+                        </script>
+                
+        </nav>
+
+
+        <main>
+
+            <div class="main" id="content">
+
+                
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                 
+
+            </asp:ContentPlaceHolder>
+       
+
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="footer">
+
+                <div class="footer-top">
+                    <a href="index.aspx" title="Página incial"><i class="fas fa-home fa-fw"></i></a>
+                    <div class="license"><i class="fab fa-creative-commons fa-fw"></i> 2021 André Luferat</div>
+                    <a href="#top" title="Topo da página"><i class="fas fa-arrow-alt-circle-up fa-fw"></i></a>
+                </div>
+
+                <div class="footer-bottom">
+
+                    <div class="social"></div>
+
+                    <div class="tools">
+                        <a href="about" title="Sobre o App">
+                            <i class="fas fa-info-circle fa-fw"></i><span>Sobre o app</span>
+                        </a>
+                        <a href="aboutus" title="Sobre agente">
+                            <i class="fas fa-user-tie fa-fw"></i><span>Sobre agente</span>
+                        </a>
+                        <a href="contacts" title="Faça contato">
+                            <i class="fas fa-comments fa-fw"></i><span>Contatos</span>
+                        </a>
+                        <a href="privacity" title="Políticas de privacidade">
+                            <i class="fas fa-lock fa-fw"></i><span>Privacidade</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="js/global.js"></script>
+
+
+       
+
+</body>
+</html>
