@@ -38,9 +38,16 @@ namespace ProjetoFinal
             cmd0.ExecuteNonQuery();
             SqlDataReader registro0 = cmd0.ExecuteReader();
             string titulo_doc = "";
+            string nameFile = "";
             if (registro0.Read())
             {
                 titulo_doc = registro0["titulo"].ToString();
+                nameFile = registro0["caminho"].ToString();
+                string strFolder;
+                string strFilePath;
+                strFolder = Server.MapPath("./");
+                strFilePath = strFolder + "uploads/" + nameFile;
+                File.Delete(strFilePath);
             }
             con0.Close();                      
                       
@@ -78,6 +85,9 @@ namespace ProjetoFinal
             con1.Open();
             cmd1.ExecuteNonQuery();
             con1.Close();
+
+            Response.Redirect("~/manager.aspx");
+
         }
 
         public void getPropriedadesCookie(string nomeCookie)
