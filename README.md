@@ -35,3 +35,6 @@ ATUALIZAÇÕES E CORREÇÕES DE BUGS:
 
 <br/><b>Versão beta 6</b>
 <br/>1. Atualizado a parte de deleção com inclusão do log
+
+<br/><b>Versão beta 7</b>
+<br/>1. Adicionado a deleção dos arquivos no servidor.
