@@ -1,5 +1,6 @@
 # Gerenciador de Arquivos
-ProjetoFinal_beta1
+Tabela do SQL Server db_SQL.txt
+
 
 ATUALIZAÇÕES E CORREÇÕES DE BUGS:
 
