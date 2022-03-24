@@ -38,7 +38,7 @@ ATUALIZAÇÕES E CORREÇÕES DE BUGS:
 
 <br/><b>Versão beta 7</b>
 <br/>1. Adicionado a deleção dos arquivos no servidor.
-<br/>2. Criação de usuário com criptografia de Hash MD5.
-<br/>3. Página de login do usuário com criptografia de Hash MD5.
+<br/>2. Criação da senha do usuário com criptografia de Hash MD5.
+<br/>3. Página de login do usuário com criptografia de Hash MD5 na senha.
 
 
