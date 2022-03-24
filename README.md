@@ -38,3 +38,4 @@ ATUALIZAÇÕES E CORREÇÕES DE BUGS:
 
 <br/><b>Versão beta 7</b>
 <br/>1. Adicionado a deleção dos arquivos no servidor.
+
