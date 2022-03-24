@@ -1,5 +1,9 @@
 # Gerenciador de Arquivos
-Tabela do SQL Server db_SQL.txt
+
+<br/>Sistema Gerenciador de Arquivos com as Linguagens C#, ASP.NET, JavaScript, CSS e HTML com integraçao de Banco de Dados SQL Server Orientado a Objeto.
+<br/>Autenticação feita via senha criptografada com hash MD5 e cookies.
+
+<br/> Tabela do SQL Server db_SQL.txt
 
 
 ATUALIZAÇÕES E CORREÇÕES DE BUGS:
