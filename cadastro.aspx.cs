@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -17,7 +19,10 @@ namespace ProjetoFinal
 
         protected void btCadastrar_Click(object sender, EventArgs e)
         {
-            
+            string senha = tbSenha.Text;
+            // Criação de Senha criptografada utilizando Hash MD5
+            string senhaEncode = FormsAuthentication.HashPasswordForStoringInConfigFile(tbSenha.Text, "MD5");
+
             //capturar a string de conexão
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
             // Criado pelo SQL Data Source
@@ -34,7 +39,7 @@ namespace ProjetoFinal
             // Varáveis do banco de dados iniciado por @ arroba
             cmd.Parameters.AddWithValue("nome", tbNome.Text);
             cmd.Parameters.AddWithValue("email", tbEmail.Text);
-            cmd.Parameters.AddWithValue("senha", tbSenha.Text);
+            cmd.Parameters.AddWithValue("senha", senhaEncode);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

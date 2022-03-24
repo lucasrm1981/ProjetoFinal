@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -19,6 +21,9 @@ namespace ProjetoFinal
         {
             String email = tbEmail.Text;
             String senha = tbSenha.Text;
+            // Troca da Senha digitada pela criptografada utilizando Hash MD5 para comparação
+            string senhaDecode = FormsAuthentication.HashPasswordForStoringInConfigFile(tbSenha.Text, "MD5");
+
             //
             //capturar a string de conexão
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
@@ -31,7 +36,7 @@ namespace ProjetoFinal
             cmd.Connection = con;
             cmd.CommandText = "select * from usuario where email = @email and senha = @senha";
             cmd.Parameters.AddWithValue("email", email);
-            cmd.Parameters.AddWithValue("senha", senha);
+            cmd.Parameters.AddWithValue("senha", senhaDecode);
             con.Open();
             SqlDataReader registro = cmd.ExecuteReader();
             // Encontrou um registro que satisfez a condição
@@ -67,5 +72,9 @@ namespace ProjetoFinal
                 Response.Write("<script> alert('Email ou Senha Incorretos!');</script>");
             }
         }
+        
     }
+
+   
+    
 }
