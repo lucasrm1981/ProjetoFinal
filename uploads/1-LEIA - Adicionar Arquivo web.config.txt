@@ -1,5 +1,0 @@
-Conteúdo abaixo do <configuration>
-
-<appSettings>
-		<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
-	</appSettings>
