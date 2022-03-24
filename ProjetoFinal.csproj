@@ -89,8 +89,6 @@
     <Content Include="manager.aspx" />
     <Content Include="perfil.aspx" />
     <Content Include="SQLDataSources.aspx" />
-    <Content Include="teste.aspx" />
-    <Content Include="upload.aspx" />
     <Content Include="UploadDeArquivo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -165,20 +163,6 @@
     </Compile>
     <Compile Include="SQLDataSources.aspx.designer.cs">
       <DependentUpon>SQLDataSources.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="teste.aspx.cs">
-      <DependentUpon>teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="teste.aspx.designer.cs">
-      <DependentUpon>teste.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="upload.aspx.cs">
-      <DependentUpon>upload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="upload.aspx.designer.cs">
-      <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="UploadDeArquivo.aspx.cs">
       <DependentUpon>UploadDeArquivo.aspx</DependentUpon>
