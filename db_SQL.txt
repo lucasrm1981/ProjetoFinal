@@ -1,0 +1,27 @@
+CREATE TABLE [dbo].[usuario] (
+    [Id]    INT         IDENTITY (1, 1) NOT NULL,
+    [email] NCHAR (100) NOT NULL,
+    [senha] NCHAR (100) NOT NULL,
+    [nome]  NCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([email] ASC)
+);
+
+
+CREATE TABLE [dbo].[documento] (
+    [Id_documento] INT           IDENTITY (1, 1) NOT NULL,
+    [id_usuario]   NCHAR (100)   NOT NULL,
+    [titulo]       NCHAR (100)   NOT NULL,
+    [tipo]         NCHAR (100)   NOT NULL,
+    [caminho]      VARCHAR (200) NOT NULL,
+    [data_criacao] DATETIME      DEFAULT (getdate()) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id_documento] ASC)
+);
+
+CREATE TABLE [dbo].[log] (
+    [Id_log]           INT         IDENTITY (1, 1) NOT NULL,
+    [id_usuario]       NCHAR (100) NOT NULL,
+    [titulo_documento] NCHAR (100) NOT NULL,
+    [data]             DATETIME    DEFAULT (getdate()) NOT NULL,
+    [tipo_log]         NCHAR (10)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id_log] ASC)
+);
