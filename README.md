@@ -1,6 +1,6 @@
 # Gerenciador de Arquivos
 
-<br/>Sistema Gerenciador de Arquivos Criado no Visual Studio 2019 com as Linguagens C#, ASP.NET, JavaScript, CSS e HTML com integraçao de Banco de Dados SQL Server Orientado a Objeto.
+<br/>Sistema Gerenciador de Arquivos Desenvolvido no Visual Studio 2019 com as Linguagens C#, ASP.NET, JavaScript, CSS e HTML com integraçao de Banco de Dados SQL Server Orientado a Objeto.
 <br/>Autenticação feita via senha criptografada com hash MD5 e cookies.
 
 <br/> Tabela do SQL Server db_SQL.txt
