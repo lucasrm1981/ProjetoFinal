@@ -4,7 +4,7 @@
      <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/JavaScript.svg">
      <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/HTML.svg">
      <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/CSS.svg">
-     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/microsoft-sql-server.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/sql-server.svg">
      <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/VisualStudio-Light.svg">
 </div>
 <h1># Gerenciador de Arquivos</h1>
