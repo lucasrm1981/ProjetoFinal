@@ -1,4 +1,13 @@
-# Gerenciador de Arquivos
+   <div style="display: inline_block" align="center"><br>
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/CS.svg">     
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/DotNet.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/JavaScript.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/HTML.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/CSS.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/microsoft-sql-server.svg">
+     <img align="center" height="40" width="40" src="https://lksistemas.com.br/img/icons/VisualStudio-Light.svg">
+</div>
+<h1># Gerenciador de Arquivos</h1>
 
 <br/>Sistema Gerenciador de Arquivos Desenvolvido no Visual Studio 2019 com as Linguagens C#, ASP.NET, JavaScript, CSS e HTML com integraçao de Banco de Dados SQL Server Orientado a Objeto.
 <br/>Autenticação feita via senha criptografada com hash MD5 e cookies.
